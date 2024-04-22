@@ -1,0 +1,107 @@
+/* Resetting default margin, padding, and box-sizing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up styles for the body */
+body{
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    min-height: 100vh; /* Minimum height of viewport */
+    display: flex; /* Using flexbox for layout */
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: linear-gradient(to bottom right,#FF204E, #5D0E41); /* Gradient background */
+    flex-wrap: wrap; /* Allowing flex items to wrap */
+}
+
+/* Styles for the TO-DO list container */
+.toDo{
+    height: 500px;
+    width: 400px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 20px;
+    background: white;
+}
+
+/* Styles for the header of the TO-DO list */
+.toDo-header{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the heading of the TO-DO list */
+.toDo-heading{
+    font-weight: 500;
+    font-size: 300%;
+}
+
+/* Styles for the body section of the TO-DO list */
+.toDo-body{
+    height: 70%;
+    overflow-y: scroll; /* Adding vertical scroll if needed */
+}
+
+/* Styles for the TO-DO tasks list / ul */
+.toDo-tasks{
+    list-style: none;
+}
+
+/* Styles for each TO-DO task / li */
+.toDo-task{
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    padding: 20px;
+}
+
+/* Styles for a completed TO-DO task */
+.toDo-task-done{
+    text-decoration: line-through; /* Strikethrough for completed tasks */
+}
+
+/* Styles when hovering over a TO-DO task */
+.toDo-task:hover{
+    cursor: pointer;
+    background: hsl(0, 0%, 80%);
+}
+
+/* Styles for the footer section of the TO-DO list */
+.toDo-footer{
+    height: 10%;
+    background: yellow;
+}
+
+/* Styles for input fields in the TO-DO list */
+.toDo-input, .toDo-headerInput{
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    font-size: 80%;
+    font-family: "Open Sans", sans-serif;
+    padding: 10px;
+}
+
+/* Styles for the floating action button */
+.fab{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    font-size: 240%;
+    color: white;
+    border: none;
+    background: #FF204E;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+}
+
+/* Styles when hovering over the floating action button */
+.fab:hover{
+    cursor: pointer;
+}

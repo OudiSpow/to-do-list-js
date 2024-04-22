@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tab title-->
+    <title>TO-DO</title>
+
+    <!--Link to google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+    <!--Link to CSS file (Stylesheet)-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--Link to JS file-->
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <!--Start first article section / main section / first card -->
+    <article class="toDo">
+        <!-- Header section of TO-DO list -->
+        <header class="toDo-header">
+            <!-- Heading of the TO-DO list -->
+            <h2 class="toDo-heading">Maandag</h2>
+        </header>
+        <!-- Start body section of TO-DO list -->
+        <section class="toDo-body">
+            <!-- Unordered list for TO-DO tasks -->
+            <ul class="toDo-tasks" id="toDo-tasks">
+                <li class="toDo-task" data-running="false">Avondeten halen</li>
+                <li class="toDo-task" data-running="false">sporten 21:00 - 22:00</li>
+                <li class="toDo-task" data-running="false">Boek lezen tot blz. 120</li>
+            </ul>
+        </section> <!-- End body section of TO-DO list -->
+        <!-- Start footer section of TO-DO list -->
+        <footer class="toDo-footer">
+            <input type="text" placeholder="Enter a task..." name="" class="toDo-input"> <!-- Input field for adding new tasks -->
+        </footer> <!-- End footer section of TO-DO list -->
+    </article> <!--End first article section / main section / first card  -->
+
+    <!--Start second article section / main section / second card -->
+    <article class="toDo">
+        <!-- Header section of TO-DO list -->
+        <header class="toDo-header">
+            <!-- Heading of the TO-DO list -->
+            <h2 class="toDo-heading">Done</h2>
+        </header>
+        <!-- Start body section of TO-DO list -->
+        <section class="toDo-body">
+            <!-- Unordered list for TO-DO tasks -->
+            <ul class="toDo-tasks" id="done">
+            </ul>
+        </section> <!-- End body section of TO-DO list -->
+    </article> <!--End second article section / main section / second card -->
+
+    <button class="fab" id="fab">+</button> <!-- Button for adding new cards / tasks -->
+
+</body>
+
+</html>
